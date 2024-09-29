@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family:"inter",sans-serif;
+}
+body{
+    background-color: #353b48;
+}
+h2{
+    color: #fff;
+}
+.faq-accordion{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-item{
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.faq-item-header{
+    background-color: #718093;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.faq-item-header:hover{
+    background-color: #718093;
+}
+.faq-item-body{
+    background-color: #fff;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-width 0.5s ease;
+}
+.faq-item-body-content{
+    padding: 15px;
+    color: #555;
+}
+.faq-item.active .faq-item-body{
+    max-height: 300px;
+}
